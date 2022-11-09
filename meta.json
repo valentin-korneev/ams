@@ -1,0 +1,68 @@
+[{
+    "id": "LegalEntity",
+    "title": "Юридическое лицо",
+    "columns": [{
+        "id": "id",
+        "title": "Учетный номер",
+        "type": "number",
+        "observe": "Acceptor.legalEntityId"
+    }, {
+        "id": "title",
+        "title": "Наименование",
+        "type": "text"
+    }, {
+        "id": "description",
+        "title": "Описание",
+        "type": "text"
+    }, {
+        "id": "address",
+        "title": "Адрес",
+        "type": "text"
+    }, {
+        "id": "is_active",
+        "title": "Статус",
+        "type": "checkbox"
+    }]
+}, {
+    "id": "Acceptor",
+    "title": "Филиал",
+    "columns": [{
+        "id": "id",
+        "title": "Учетный номер",
+        "type": "number"
+    }, {
+        "id": "legalEntityId",
+        "title": "Учетный номер юридического лица",
+        "type": "number",
+        "observe": "LegalEntity.id"
+    }, {
+        "id": "title",
+        "title": "Наименование",
+        "type": "text"
+    }, {
+        "id": "description",
+        "title": "Описание",
+        "type": "text"
+    }]
+}, {
+    "id": "Terminal",
+    "title": "Терминал",
+    "columns": [{
+        "id": "id",
+        "title": "Учетный номер",
+        "type": "number"
+    }, {
+        "id": "acceptorId",
+        "title": "Учетный номер юридического лица",
+        "type": "number",
+        "observe": "Acceptor.id"
+    }, {
+        "id": "title",
+        "title": "Наименование",
+        "type": "text"
+    }, {
+        "id": "description",
+        "title": "Описание",
+        "type": "text"
+    }]
+}]

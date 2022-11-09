@@ -1,0 +1,9 @@
+.form-switch {
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.form-switch .form-check-input {
+    margin-left: 0;
+    vertical-align: middle;
+    margin-top: 0;
+}
